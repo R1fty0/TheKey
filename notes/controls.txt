@@ -1,0 +1,14 @@
+W - forward
+A - left
+S - backward
+D - right
+Left Shift - sprint
+LMB - shoot
+RMB - aim down sights
+R - reload
+1 - primary weapon
+2 - secondary weapon 
+3 - knife
+4 - grenade
+Space/MWUp/MWDown - jump
+Esc - show cursor (temp)

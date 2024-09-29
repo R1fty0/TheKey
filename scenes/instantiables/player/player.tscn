@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=3 uid="uid://cxm0uv8it4a1f"]
+
+[ext_resource type="Script" path="res://scenes/instantiables/player/player_movement.gd" id="1_fv7yw"]
+[ext_resource type="Texture2D" uid="uid://ct6dhfa1bl1xr" path="res://addons/kenney_prototype_textures/orange/texture_01.png" id="2_p73df"]
+[ext_resource type="Script" path="res://scenes/instantiables/player/camera_controller.gd" id="3_j3oyg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xtfcb"]
+albedo_texture = ExtResource("2_p73df")
+uv1_triplanar = true
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_11av7"]
+material = SubResource("StandardMaterial3D_xtfcb")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4dd2x"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_fv7yw")
+
+[node name="Visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_11av7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_4dd2x")
+
+[node name="CameraPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.597668, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+script = ExtResource("3_j3oyg")

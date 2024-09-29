@@ -1,0 +1,63 @@
+[gd_scene load_steps=12 format=3 uid="uid://bjmnq60r1mqws"]
+
+[ext_resource type="Texture2D" uid="uid://cv2q71t3embtp" path="res://addons/kenney_prototype_textures/purple/texture_09.png" id="1_8jh0c"]
+[ext_resource type="PackedScene" uid="uid://cxm0uv8it4a1f" path="res://scenes/instantiables/player/player.tscn" id="2_o1yva"]
+[ext_resource type="PackedScene" uid="uid://cp8etxov27kn3" path="res://scenes/game_ui/combat_hud.tscn" id="3_ig00w"]
+[ext_resource type="Texture2D" uid="uid://dqrkfdm13b6tn" path="res://addons/kenney_prototype_textures/red/texture_01.png" id="4_f1yi7"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3l2xk"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_wd2yl"]
+sky_material = SubResource("ProceduralSkyMaterial_3l2xk")
+
+[sub_resource type="Environment" id="Environment_v3dsv"]
+background_mode = 2
+sky = SubResource("Sky_wd2yl")
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xr7vp"]
+albedo_texture = ExtResource("1_8jh0c")
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mwrfn"]
+albedo_texture = ExtResource("4_f1yi7")
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_s6g54"]
+material = SubResource("StandardMaterial3D_mwrfn")
+size = Vector3(1, 2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8b7kp"]
+size = Vector3(1, 2, 1)
+
+[node name="TestingWorld" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_v3dsv")
+
+[node name="Ground" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.171448, 0)
+use_collision = true
+size = Vector3(20, 0.5, 20)
+material = SubResource("StandardMaterial3D_xr7vp")
+
+[node name="Player" parent="." instance=ExtResource("2_o1yva")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.19339, 0)
+
+[node name="CombatHUD" parent="." instance=ExtResource("3_ig00w")]
+
+[node name="TargetDummy" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.08715, 8.52851)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="TargetDummy"]
+mesh = SubResource("BoxMesh_s6g54")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TargetDummy"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0107332, 0)
+shape = SubResource("BoxShape3D_8b7kp")

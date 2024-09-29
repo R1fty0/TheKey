@@ -1,0 +1,85 @@
+[gd_scene load_steps=7 format=4 uid="uid://dsuba5eaf3evr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1va38"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jqn82"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 3.75516, 5.04065),
+"format": 34359742465,
+"index_count": 84,
+"index_data": PackedByteArray("BAAJAAYABAALAAkAAwAGAAIAAwAHAAYABwAEAAYABwAFAAQABQADAAEABQAHAAMAAQACAAAAAQADAAIABQAAAAQABQABAAAACgAJAAsACgAIAAkAAgAKAAAAAgAIAAoAAAALAAQAAAAKAAsACQANAAYACQAPAA0ADQAOAAwADQAPAA4ACAAPAAkACAAOAA8AAgAOAAgAAgAMAA4ABgAMAAIABgANAAwA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AACAPwAAgD8AAIC/AACAPwAAgL8AAIC/AACAPwAAgD8AAIA/AACAPwAAgL8AAIA/AACAvwAAgD8AAIC/AACAvwAAgL8AAIC/AACAvwAAgD8AAIA/AACAvwAAgL8AAIA/AACAP35UMEAAAIA/AACAv35UMEAAAIA/AACAP35UMEAAAIC/AACAv35UMEAAAIC/AACAPwAAgD//TIFAAACAvwAAgD//TIFAAACAP35UMED/TIFAAACAv35UMED/TIFA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_n2y1l"]
+resource_name = "pistol_Cube"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 3.75516, 5.04065),
+"attribute_data": PackedByteArray("AAAgPwAAAD8AACA/AAAAPwAAwD4AAAA/AADAPgAAAD8AAMA+AAAAPwAAID8AAIA+AAAgPwAAgD4AACA/AACAPgAAwD4AAIA+AADAPgAAgD4AAMA+AACAPgAAID8AAEA/AAAgPwAAQD8AAMA+AABAPwAAAD4AAAA/AADAPgAAQD8AACA/AACAPwAAID8AAAAAAAAgPwAAAAAAAMA+AACAPwAAAD4AAIA+AADAPgAAAAAAACA/AACAPgAAID8AAIA+AAAgPwAAgD4AACA/AACAPwAAYD8AAIA+AABgPwAAgD4AACA/AAAAPwAAID8AAAA/AAAgPwAAAD8AACA/AABAPwAAID8AAEA/AABgPwAAAD8AACA/AACAPgAAID8AAIA+AAAgPwAAgD4AACA/AACAPwAAID8AAAAAAAAgPwAAAAAAACA/AACAPgAAID8AAIA+AAAgPwAAgD4AACA/AACAPwAAID8AAAAAAABgPwAAgD4="),
+"format": 34359742487,
+"index_count": 84,
+"index_data": PackedByteArray("CwAZABAACwAfABkACQASAAYACQAVABIAEwALABAAEwANAAsADgAIAAIADgAUAAgABAAHAAEABAAKAAcADwAAAAwADwADAAAAHQAbACEAHQAXABsABwAeAAEABwAYAB4AAAAgAAwAAAAcACAAGQAlABAAGQArACUAJwAoACMAJwAsACgAFgAtABoAFgApAC0ABwAqABgABwAkACoAEQAiAAUAEQAmACIA"),
+"material": SubResource("StandardMaterial3D_1va38"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 46,
+"vertex_data": PackedByteArray("AACAPwAAgD8AAIC/AACAPwAAgD8AAIC/AACAPwAAgL8AAIC/AACAPwAAgL8AAIC/AACAPwAAgL8AAIC/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgL8AAIA/AACAPwAAgL8AAIA/AACAPwAAgL8AAIA/AACAvwAAgD8AAIC/AACAvwAAgD8AAIC/AACAvwAAgL8AAIC/AACAvwAAgL8AAIC/AACAvwAAgL8AAIC/AACAvwAAgD8AAIA/AACAvwAAgD8AAIA/AACAvwAAgD8AAIA/AACAvwAAgL8AAIA/AACAvwAAgL8AAIA/AACAvwAAgL8AAIA/AACAP35UMEAAAIA/AACAP35UMEAAAIA/AACAP35UMEAAAIA/AACAv35UMEAAAIA/AACAv35UMEAAAIA/AACAv35UMEAAAIA/AACAP35UMEAAAIC/AACAP35UMEAAAIC/AACAP35UMEAAAIC/AACAv35UMEAAAIC/AACAv35UMEAAAIC/AACAv35UMEAAAIC/AACAPwAAgD//TIFAAACAPwAAgD//TIFAAACAPwAAgD//TIFAAACAvwAAgD//TIFAAACAvwAAgD//TIFAAACAvwAAgD//TIFAAACAP35UMED/TIFAAACAP35UMED/TIFAAACAP35UMED/TIFAAACAv35UMED/TIFAAACAv35UMED/TIFAAACAv35UMED/TIFA//////9///////9//3////9/AAD///+///////9///////9//3////9/AAD///+//3//f/9///////9//3////9/AAD///+//3//f/9///////9//3///wAA/3//f/////////9///8AAP9//3////9/AAD///+///////9///8AAP9//3////9/AAD///+//3//f/9///8AAP9//3////9/AAD///+//3//f/9/////f///////v/9///8AAP+/////f////78AAP9/////v/9///////+//3///wAA/7//////////v/9///8AAP+/////f////78AAP9/////v/////////+//3///wAA/7//fwAA////v/9//3////8/////f////78AAP9/////v/9/AAD///+//3//f////z//f/9/////P/9///////+/////f////78AAP9/////v/9//3////8//3///////78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_jqn82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhnhi"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1s22q"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAADAAEAAAACAAMAAgAHAAMAAgAGAAcABgAFAAcABgAEAAUABAABAAUABAAAAAEAAgAEAAYAAgAAAAQABwABAAMABwAFAAEA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP////8AAAAAAAAAAAAAAAD//wAAAAD//wAA//8AAP///////wAA//8AAAAAAAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_e27fd"]
+resource_name = "pistol_Cube_001"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"attribute_data": PackedByteArray("/1////8f/z//XwAA/5////+fAAD/3/8//1//v/8f/3//X/+//5//v/+f/7//3/9//1//P/9f/z//X/8//5//P/+f/z//n/8//1//f/9f/3//X/9//5//f/+f/3//n/9/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAAJAAMAAAAGAAkACAAVAAoACAATABUAFAARABcAFAAOABEADQAEAA8ADQACAAQABwAMABIABwABAAwAFgAFAAsAFgAQAAUA"),
+"material": SubResource("StandardMaterial3D_xhnhi"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//VNUAAAAA////vwAAAAD///+/AAD/////VNUAAP//////vwAA////////AAAAAAAAVNUAAAAAAAD/vwAAAAAAAP//AAD//wAAVNUAAP//AAD//wAA//8AAP////8AAP///7///wAA////v///AAD//1TV/////////7///////////////////1TV//8AAAAA/7///wAAAAD/////AAAAAFTV/////wAA////////AAD///////8AAFTVVNVU1QAA/3//////VNVU1f//////f/+/VNVU1QAA/3//v/+/VNVU1f+//7//f/+/AAD/f/////+qKqoq//////9//7+qKqoqAAD/f/+//7+qKqoq/7//v/9//7+qKqoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_1s22q")
+
+[node name="Gun" type="Node3D"]
+
+[node name="Pistol" type="Node3D" parent="."]
+
+[node name="Body" type="MeshInstance3D" parent="Pistol"]
+mesh = SubResource("ArrayMesh_n2y1l")
+skeleton = NodePath("")
+
+[node name="Mag" type="MeshInstance3D" parent="Pistol"]
+transform = Transform3D(0.722898, 0, 0, 0, 1.65213, 0, 0, 0, 0.927319, 0, 0.451676, 0)
+mesh = SubResource("ArrayMesh_e27fd")
+skeleton = NodePath("")
+
+[node name="FirerateTimer" type="Timer" parent="."]
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0125486, 0.999921, 0, -0.999921, -0.0125486, 0, 1.91732, 4.269)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
